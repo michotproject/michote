@@ -1,5 +1,7 @@
 package com.michote.responseObjects;
 
+import java.sql.Timestamp;
+
 /**
  * Created by jtq603 on 10/23/16.
  */
@@ -9,15 +11,15 @@ public class HouseResponse {
     private String title;
     private String description;
     private Double rent;
-    private String availabelDate;
-    private String postingDate;
+    private Timestamp availableDate;
+    private Timestamp postingDate;
     private String city;
     private String dog;
     private String sex;
-    private String laoundry;
+    private String laundry;
     private String cat;
     private String furnished;
-    private String smooking;
+    private String smoking;
     private String wheelChairAccessible;
     private String State;
     private String country;
@@ -25,6 +27,7 @@ public class HouseResponse {
     private String address1;
     private String address2;
     private String parking;
+    private Timestamp updatedDate;
 
     public HouseResponse() {
     }
@@ -69,19 +72,19 @@ public class HouseResponse {
         this.rent = rent;
     }
 
-    public String getAvailabelDate() {
-        return availabelDate;
+    public Timestamp getAvailableDate() {
+        return availableDate;
     }
 
-    public void setAvailabelDate(String availabelDate) {
-        this.availabelDate = availabelDate;
+    public void setAvailableDate(Timestamp availableDate) {
+        this.availableDate = availableDate;
     }
 
-    public String getPostingDate() {
+    public Timestamp getPostingDate() {
         return postingDate;
     }
 
-    public void setPostingDate(String postingDate) {
+    public void setPostingDate(Timestamp postingDate) {
         this.postingDate = postingDate;
     }
 
@@ -109,12 +112,12 @@ public class HouseResponse {
         this.sex = sex;
     }
 
-    public String getLaoundry() {
-        return laoundry;
+    public String getLaundry() {
+        return laundry;
     }
 
-    public void setLaoundry(String laoundry) {
-        this.laoundry = laoundry;
+    public void setLaundry(String laundry) {
+        this.laundry = laundry;
     }
 
     public String getCat() {
@@ -133,12 +136,12 @@ public class HouseResponse {
         this.furnished = furnished;
     }
 
-    public String getSmooking() {
-        return smooking;
+    public String getSmoking() {
+        return smoking;
     }
 
-    public void setSmooking(String smooking) {
-        this.smooking = smooking;
+    public void setSmoking(String smoking) {
+        this.smoking = smoking;
     }
 
     public String getWheelChairAccessible() {
@@ -195,5 +198,13 @@ public class HouseResponse {
 
     public void setParking(String parking) {
         this.parking = parking;
+    }
+
+    public Timestamp getUpdatedDate() {
+        return updatedDate;
+    }
+
+    public void setUpdatedDate(Timestamp updatedDate) {
+        this.updatedDate = updatedDate;
     }
 }

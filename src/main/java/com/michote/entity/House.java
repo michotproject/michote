@@ -1,6 +1,7 @@
 package com.michote.entity;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -17,15 +18,15 @@ public class House {
 	private String title;
 	private String description;
 	private Double rent;
-	private String availabelDate;
-	private String postingDate;
+	private Timestamp availableDate;
+	private Timestamp postingDate;
 	private String city;
 	private String dog;
 	private String sex;
-	private String laoundry;
+	private String laundry;
 	private String cat;
 	private String furnished;
-	private String smooking;
+	private String smoking;
 	private String wheelChairAccessible;
 	private String State;
 	private String country;
@@ -33,6 +34,7 @@ public class House {
 	private String address1;
 	private String address2;
 	private String parking;
+	private Timestamp updatedDate;
 
 	
 	@OneToMany(mappedBy = "house")
@@ -74,12 +76,12 @@ public class House {
 		this.sex = sex;
 	}
 
-	public String getLaoundry() {
-		return laoundry;
+	public String getLaundry() {
+		return laundry;
 	}
 
-	public void setLaoundry(String laoundry) {
-		this.laoundry = laoundry;
+	public void setLaundry(String laundry) {
+		this.laundry = laundry;
 	}
 
 	public String getCat() {
@@ -98,12 +100,12 @@ public class House {
 		this.furnished = furnished;
 	}
 
-	public String getSmooking() {
-		return smooking;
+	public String getSmoking() {
+		return smoking;
 	}
 
-	public void setSmooking(String smooking) {
-		this.smooking = smooking;
+	public void setSmoking(String smoking) {
+		this.smoking = smoking;
 	}
 
 	public String getWheelChairAccessible() {
@@ -194,19 +196,19 @@ public class House {
 		this.rent = rent;
 	}
 
-	public String getAvailabelDate() {
-		return availabelDate;
+	public Timestamp getAvailableDate() {
+		return availableDate;
 	}
 
-	public void setAvailabelDate(String availabelDate) {
-		this.availabelDate = availabelDate;
+	public void setAvailableDate(Timestamp availableDate) {
+		this.availableDate = availableDate;
 	}
 
-	public String getPostingDate() {
+	public Timestamp getPostingDate() {
 		return postingDate;
 	}
 
-	public void setPostingDate(String postingDate) {
+	public void setPostingDate(Timestamp postingDate) {
 		this.postingDate = postingDate;
 	}
 
@@ -216,5 +218,13 @@ public class House {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public Timestamp getUpdatedDate() {
+		return updatedDate;
+	}
+
+	public void setUpdatedDate(Timestamp updatedDate) {
+		this.updatedDate = updatedDate;
 	}
 }
