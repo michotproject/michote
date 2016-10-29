@@ -1,11 +1,10 @@
 package com.michote.service;
 
-import com.michote.responseObjects.HouseResponse;
-
 import java.util.List;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
+
+import com.michote.responseObjects.HouseResponse;
 
 /**
  * Created by jtq603 on 10/23/16.
