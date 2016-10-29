@@ -1,5 +1,7 @@
 package com.michote.responseObjects;
 
+import java.sql.Timestamp;
+
 /**
  * Created by jtq603 on 10/23/16.
  */
@@ -24,9 +26,9 @@ public class UserResponse {
 
     private String secondaryPhone;
 
-    private String createdDate;
+    private Timestamp createdDate;
 
-    private String updatedDate;
+    private Timestamp updatedDate;
 
     public UserResponse() {
 
@@ -96,19 +98,20 @@ public class UserResponse {
         this.secondaryPhone = secondaryPhone;
     }
 
-    public String getCreatedDate() {
-        return createdDate;
-    }
+	public Timestamp getCreatedDate() {
+		return createdDate;
+	}
 
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
-    }
+	public void setCreatedDate(Timestamp createdDate) {
+		this.createdDate = createdDate;
+	}
 
-    public String getUpdatedDate() {
-        return updatedDate;
-    }
+	public Timestamp getUpdatedDate() {
+		return updatedDate;
+	}
 
-    public void setUpdatedDate(String updatedON) {
-        updatedDate = updatedON;
-    }
+	public void setUpdatedDate(Timestamp updatedDate) {
+		this.updatedDate = updatedDate;
+	}
+
 }

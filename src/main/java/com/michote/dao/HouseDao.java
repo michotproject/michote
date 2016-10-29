@@ -1,15 +1,12 @@
 package com.michote.dao;
 
 
-import com.michote.entity.House;
+import java.util.List;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
-import javax.transaction.Transactional;
+import com.michote.entity.House;
 
 /**
  * Created by jtq603 on 10/15/16.
